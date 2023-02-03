@@ -3,5 +3,39 @@ body{
 }
 
 h1{
-    
+    background-color:peru;
+    color: powderblue;
+    text-align: left;
+}
+
+h2{
+    background-color:peru;
+    color:powderblue;
+    text-align:center;
+}
+
+h3{
+    background-color:peru;
+    color:powderblue;
+    text-align:right;
+}
+
+h4{
+    background-color:peru;
+    color:powderblue;
+    text-align:justify;
+}
+
+h5{
+    background-color:peru;
+    color:powderblue;
+    text-align:left;
+    direction: ltr;
+}
+
+h6{
+    background-color:peru;
+    color:powderblue;
+    text-align:center;
+    unicode-bidi: bidi-override;
 }
