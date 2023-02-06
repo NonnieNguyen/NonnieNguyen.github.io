@@ -4,6 +4,7 @@ background: linear-gradient(180deg, rgba(122,145,141,1) 2%, rgba(147,177,167,1) 
     background-attachment: fixed;
     overflow: scroll;
     height: 100%;
+    color:black;
 }
 
 h1{
@@ -17,6 +18,7 @@ h1{
     float:right;
 }
 .about{
+    color: black;
     text-align: left;
     font-size:x-large;
 
