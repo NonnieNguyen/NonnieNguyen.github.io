@@ -1,11 +1,33 @@
 body{
-    background-color: blanchedalmond;
+    background: rgb(189,224,254);
+    background: linear-gradient(180deg, rgba(189,224,254,1) 0%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    overflow: scroll;
+    height: 100%;
 }
 
 h1{
-    background-color:peru;
-    color: powderblue;
+
+    color: #ffafcc;
     text-align: left;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.show{
+    opacity: 100;
+    transition: 1s;
+}
+
+.center{
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 h2{
