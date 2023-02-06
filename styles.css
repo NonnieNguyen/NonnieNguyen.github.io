@@ -1,6 +1,8 @@
 body{
-    background: rgb(122,145,141);
-background: linear-gradient(180deg, rgba(122,145,141,1) 2%, rgba(147,177,167,1) 57%, rgba(153,194,162,1) 100%);
+    /*background: rgb(122,145,141);
+    background: linear-gradient(180deg, rgba(122,145,141,1) 2%, rgba(147,177,167,1) 57%, rgba(153,194,162,1) 100%);*/
+    background: rgb(189,224,254);
+    background: linear-gradient(180deg, rgba(189,224,254,1) 0%, rgba(0,212,255,1) 100%);
     background-attachment: fixed;
     overflow: scroll;
     height: 100%;
