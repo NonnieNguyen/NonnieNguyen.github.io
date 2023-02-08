@@ -1,9 +1,8 @@
 body{
     /*background: rgb(122,145,141);
     background: linear-gradient(180deg, rgba(122,145,141,1) 2%, rgba(147,177,167,1) 57%, rgba(153,194,162,1) 100%);*/
-    background: rgb(189,224,254);
-    background: linear-gradient(180deg, rgba(189,224,254,1) 0%, rgba(0,212,255,1) 100%);
-    background-attachment: fixed;
+    background: rgb(183,228,199);
+    background: linear-gradient(180deg, rgba(183,228,199,1) 7%, rgba(149,213,178,1) 55%, rgba(116,198,157,1) 100%); background-attachment: fixed;
     overflow: scroll;
     height: 100%;
     color:black;
@@ -14,15 +13,18 @@ h1{
     text-align: left;
 }
 
-.manav{
-    height:200px;
-    width:200px;
-    float:right;
+.manav {    
+    margin:1%;
+    height:175px;
+    width:175px;
+    float: right;
+    
 }
 .about{
     color: black;
     text-align: left;
     font-size:x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif
 
 }
 
@@ -42,36 +44,4 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 50px;
-}
-
-h2{
-    background-color:peru;
-    color:powderblue;
-    text-align:center;
-}
-
-h3{
-    background-color:peru;
-    color:powderblue;
-    text-align:right;
-}
-
-h4{
-    background-color:peru;
-    color:powderblue;
-    text-align:justify;
-}
-
-h5{
-    background-color:peru;
-    color:powderblue;
-    text-align:left;
-    direction: ltr;
-}
-
-h6{
-    background-color:peru;
-    color:powderblue;
-    text-align:center;
-    unicode-bidi: bidi-override;
 }
