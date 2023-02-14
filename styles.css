@@ -1,11 +1,28 @@
 body{
-    /*background: rgb(122,145,141);
-    background: linear-gradient(180deg, rgba(122,145,141,1) 2%, rgba(147,177,167,1) 57%, rgba(153,194,162,1) 100%);*/
-    background: rgb(183,228,199);
-    background: linear-gradient(180deg, rgba(183,228,199,1) 7%, rgba(149,213,178,1) 55%, rgba(116,198,157,1) 100%); background-attachment: fixed;
+    
+    background-color: #A09ABC;
     overflow: scroll;
     height: 100%;
     color:black;
+}
+nav{
+    font-size: larger;
+    font-weight: 800;
+}
+nav a{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 h1{
