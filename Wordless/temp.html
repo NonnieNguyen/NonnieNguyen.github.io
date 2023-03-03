@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+<p id="Wordless"></p>
+<script>
+    let temp = ["Hello<br>","My","Name"];
+    document.getElementById("demo").innerHTML = temp;
+    
+    </script>
+<script src ="words.js"></script>
+<script src ="Wordless.js"></script>
+
+<script>
+    let Solutioned = CheckEntry("wrong");
+    let string = "";
+    
+    for (let x in Solutioned){
+        string = Solutioned + "<br>";
+    }
+    document.getElementById("Wordless").innerHTML = string;
+    
+</script>
+</body>
+</html> 
