@@ -17,8 +17,12 @@
 
 <script>
     let Solutioned = CheckEntry("wrong");
+    let string = "";
     
-    document.getElementById("Wordless").innerHTML = Solutioned.length;
+    for (let x in Solutioned){
+        string = Solutioned + "<br>";
+    }
+    document.getElementById("Wordless").innerHTML = string;
     
 </script>
 </body>

@@ -1,4 +1,4 @@
-let Possible_Solutions = [];
+var Possible_Solutions = {};
 let Spot = 0;
 let High_Score= 0;
 const USEDALL = 26;
@@ -36,18 +36,20 @@ function CheckEntry(Hated){
         Used = AddUsed(Used,Hated);
         New_List = RemoveUsed(Used,ALL_WORDS);
 
-        FindWords(New_List[counter],Used, Solution, New_List);
-        return Possible_Solutions;
         while(run){
-            
+            FindWords(New_List[counter],Used, Solution, New_List);
 
             if (Spot == 0){
                 run == false;
             }
 
+            // make new function that will remove that specfic word
             else{
                 for(let x in Possible_Solutions[Spot - 1]){
-                    New_List = RemoveUsed(Possible_Solutions[x],New_List);
+                    console.log(Possible_Solutions[Spot-1][x]);
+                    //New_List = RemoveWord(Possible_Solutions[Spot-1][x],New_List);
+                    console.log(New_List.length);
+                    
                 }
             }
 
@@ -56,7 +58,6 @@ function CheckEntry(Hated){
             }
 
             else counter++;
-
         }
 
         console.log("Done");
@@ -74,6 +75,18 @@ function AddUsed(Used,Hated){
         
     }
     return Used;
+}
+
+// function removes a word that was already used
+function RemoveWord(Used,Word_List){
+    var New = [];
+    var add = true;
+    for(let x in Word_List){
+        if (Word_List[x] != Used){
+            New.push(Word_List[x]);
+        }
+    }
+    return New;
 }
 
 // removes the words that have used letters
@@ -97,19 +110,18 @@ function RemoveUsed(Used,Word_List){
 }
 
 function FindWords(Hated,Used, Solution, Word_List){
+    let count = 0;
     Solution.push(Hated);
     Used = AddUsed(Used,Hated);
     Word_List = RemoveUsed(Used,Word_List);
 
     if (Used.length == USEDALL){
         // function to print out all possible words
-        Possible_Solutions.push(Solution);
+        Possible_Solutions[Spot] = Solution.slice();
         Spot++;
-        console.log("SOLTUION??: " +Solution);
-        for(let x in Solution){
-            if(Solution[x] != HATED_PRIME){
-                Solution.pop();
-            }
+        console.log("SOLTUION?: " +Possible_Solutions[Spot-1]);
+        while (Solution.length != 1){
+            Solution.pop();
         }
     }
 
