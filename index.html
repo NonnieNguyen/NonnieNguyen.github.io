@@ -2,47 +2,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
         <link rel="stylesheet" href ="styles.css">
         <title>About Me: Alan Nguyen </title>
     </head>
-<body>
-    <div class="center-div">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="https://umbc-my.sharepoint.com/:b:/g/personal/alann1_umbc_edu/EQvPMimSHFRCk2HI_0zoowQBuBmUUfU87vBUgxjYBitQMQ?e=9ouHrt" target="blank">Resume</a>
-        </nav>
-    </div>
-    <h1 style = "text-align: center; border-style:solid" >About Me</h1>
-    <h1 style = "text-align: center">Work In Progress<br>Excuse how it looks</h1>
-    <div>
-        <div style="display: grid;justify-content: center; align-items: center;">
-            <img class = "manav" src="https://media.giphy.com/media/lpdqhQyz9sHfTN57oP/giphy.gif" alt = "manav";>
-            <div style="display: flex;justify-content: center;align-items: center;">
-                <span style="font-family: Arial, Helvetica, sans-serif;margin-top: -40px; color: aliceblue;background-color: black; padding: 5px;border-radius: 20px;">No Bagels?</span>
-            </div>
-        </div>
-        <p class = "about">
-            My name is Alan Nguyen. Welcome to my website, this is something that I have been working on in my free time for fun, and where I will eventually host other projects I have been working on.
-            A few things about me, I am a third year Computer Science student at UMBC.
-            I am the Vice President of the UMBC Men's Ultimate Frisbee team 22' - 23'.
-            I was born in New Jersey and lived there for about 6 years before moving to Maryland where I currently reside.
-        </p>
-
-        <h1>Sports and Interests</h1>
-        <p class = "about">
-            In elementary school, I tried a bunch of sports before I eventually decided to commit swimming
-            ,which ended up being my main interest and past time for the next ~10 years. During my swimming career
-            my biggest achievements include, being able to compete at a national level with people all along the East coast
-            and achieving state titles, both in club and high school settings. 
-            <br><br>
-            Other than school, work, practices, and spending time with friends. I am also interested in video games and computers. With
-            the help of one of my friends I even built my own computer from scratch.
-            <br><br>
-            Since comming to college, I decided to retire from swimming competitvely and decided to start competeting in a new sport
-            Ultimate Frisbee.
-
-        </p>
-    </div>
-    
+<body>   
+    <script src="terminal.js" defer></script>
 </body>
 </html>
+
+<template id = "commands">hello (name) - Basic command that hello to whatever name you enter.
+acknowledgement - Displays  info and acknowledgement of the open source API I used to create this website.
+info - Displays info about Alan Nguyen. (Work In Progress)
+
+*Comming Soon* 
+Projects - Links to personal projects I have done.
+Socials - Links to where you can contact me.</template>
+
+
+
+<template id ="greetings">
+   _   _                   __                             
+  /_\ | | __ _ _ __     /\ \ \__ _ _   _ _   _  ___ _ __  
+ //_\\| |/ _` | '_ \   /  \/ / _` | | | | | | |/ _ | '_ \ 
+/  _  | | (_| | | | | / /\  | (_| | |_| | |_| |  __| | | |
+\_/ \_|_|\__,_|_| |_| \_\ \/ \__, |\__,_|\__, |\___|_| |_|
+                             |___/       |___/                                                                                          
+Type 'help' for commands</template>
+
+<template id ="acknowledgement">Using JQueryTerminal, an open source API, I was able to create this terminal based website about myself.
+To check out more about JQueryTerminal:
+    - The API's website: https://terminal.jcubic.pl/
+    - Tutorial Website: https://itnext.io/how-to-create-interactive-terminal-like-website-888bb0972288 
+</template>
+
+<template id ="about-me">Hello! My name is Alan Nguyen, welcome to terminal like website!
+    
+</template>

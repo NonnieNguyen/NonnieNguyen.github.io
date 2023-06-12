@@ -25,40 +25,7 @@ nav a:hover{
     align-items:center;
 }
 
-h1{
-    color: black;
-    text-align: left;
-}
-
-.manav {    
-    margin:1%;
-    height:175px;
-    width:175px;
-    float: right;
-    
-}
-.about{
-    color: black;
-    text-align: left;
-    font-size:large;
-    font-family: Georgia, 'Times New Roman', Times, serif
-
-}
-
-.hidden{
-    opacity: 0;
-}
-
-.show{
-    opacity: 100;
-    transition: 1s;
-}
-
-.center{
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
+.terminal{
+    --color: green;
+    --size: 1.2;
 }
